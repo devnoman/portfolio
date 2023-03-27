@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+}
+
+#logo-title {
+
+    /* width: 30%; */
+}
+
+#logo-title h1 {
+    padding: 15px;
+    color: white;
+    font-family: 'Days One', sans-serif;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+#logo-title h1::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    animation-name: logo-bg;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes logo-bg {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+#navbar ul {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    justify-content: right;
+
+}
+
+
+
+#navbar ul li {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    font-size: 0.8rem;
+    margin: 15px;
+
+
+}
+
+#navbar ul li a {
+    display: flex;
+    position: relative;
+    color: bisque;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: 'Days One', sans-serif;
+}
+
+#navbar ul li a:hover,
+a:active {
+    color: rgb(194, 110, 6);
+    background-color: bisque;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+
+
+}
+
+#banner::before {
+    content: "";
+    position: fixed;
+    background-image: url(../images/banner00.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+
+}
+
+
+#banner .text {
+    color: white;
+    margin: 18px 0px;
+    margin-left: 100px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    width: fit-content;
+}
+
+#banner #text2 {
+    color: red;
+    font-family: 'Days One', sans-serif;
+    font-size: 3rem;
+}
+
+#banner #text2::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: #f44336;
+    display: block;
+    transition: 0.7s;
+
+}
+
+#banner #text2:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+#banner #text2:hover::after {
+    width: 100%;
+}
+
+#banner #text3 {
+    font-size: medium;
+
+}
+
+#banner .icons {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#banner .fa-brands {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+
+}
+
+#banner a {
+    text-decoration: none;
+
+}
+
+#banner a:hover {
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+#banner .fa-brands:hover {
+    color: black;
+}
+
+#s1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: 800px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#s1 .s1-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: auto;
+    margin: 50px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#s1 #s1-firstbox #s1-heading {
+    padding-top: 15px;
+    font-family: 'Days One', sans-serif;
+}
+
+#s1 #s1-firstbox #s1-para {
+    padding: 25px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+
+#s1 #s1-secondbox img {
+    width: 400px;
+    box-shadow: 5px 5px 30px;
+    border-radius: 20px;
+}
+
+#s2 {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#s2 #s1-heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Days One', sans-serif;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+#s2 .box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    margin: 50px 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid whitesmoke;
+
+}
+
+#s2 .box:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px wheat;
+}
+
+#s2 .box img {
+    border-radius: 10px;
+
+}
+
+#s2 h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: auto;
+    color: black;
+    margin-top: 15px;
+    font-size: large;
+}
+
+#s2 p {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: auto;
+    padding: 25px 25px;
+    font-size: medium;
+}
+
+
+#s3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 60px;
+}
+
+#s3 h2 {
+    display: block;
+    text-align: center;
+    font-family: 'Days One', sans-serif;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+
+#s3 .s3-box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    margin: 30px 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px black;
+    border: 2px solid black(8, 8, 8);
+
+
+}
+
+
+#s3 .s3-box img {
+    border-radius: 5px;
+}
+
+#contact-section {
+    background-color: gray;
+    color: black;
+    width: 100%;
+    height: 650px;
+
+}
+
+#contact-section .contact-h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Days One', sans-serif;
+}
+
+#contact-section #contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 1rem;
+    border-radius: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#contact-section #contact-box form {
+    width: 50%;
+    padding: 25px;
+    padding-top: 25px;
+}
+
+#contact-box label {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+#contact-section #contact-box #contact-btn {
+    display: flex;
+    font-family: 'Days One', sans-serif;
+    width: fit-content;
+    padding: 10px 25px;
+    margin: 15px auto;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#contact-section #contact-box #contact-btn:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+
+#s4 {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#s4 .s4box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: bisque;
+    padding-top: 10px;
+    width: 25%;
+
+}
+
+#s4 #box6 #ft-heading {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Days One', sans-serif;
+    background-color: black;
+    color: bisque;
+    padding: 5px;
+    font-size: medium;
+}
+
+#s4 #box6 p {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: bisque;
+    padding: 5px;
+    font-size: small;
+
+}
+
+#s4 #box6 .icons {
+    display: flex;
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+#s4 #box6 .fa-brands {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5px;
+
+}
+
+#s4 #box6 .icons #a1 {
+    text-decoration: none;
+    padding: 0%;
+}
+
+#s4 #box6 a:hover {
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+#s4 #box6 .fa-brands:hover {
+    color: black;
+}
+
+#s4 #box7 {
+    padding-left: 100px;
+}
+
+#s4 .itemsft1 {
+    list-style: none;
+
+}
+
+#s4 .s4box a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 7px;
+    color: bisque;
+    width: fit-content;
+    background-color: none;
+    font-size: small;
+}
+
+#s4 .s4box a:hover {
+    font-weight: bolder;
+    background-color: black;
+
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-bottom: 10px;
+    font-size: x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 10px;
+
+}
+
+.line {
+    width: 30px;
+    background-color: bisque;
+    height: 3px;
+    margin: 5px 3px;
+        transition: transform 0.5s, width 0.5s;
+}
+
+
+
+@media only screen and (max-width:975px) {
+
+
+    #logo-title h1 {
+        font-size: medium;
+
+    }
+
+    #navbar {
+        flex-direction: column;
+        justify-content: left;
+        flex-wrap: nowrap;
+        align-items: start;
+    }
+
+    .navbar1 {
+        height: 280px;
+
+    }
+
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    #navbar ul li {
+        margin: 10px;
+
+    }
+
+    .burger {
+        display: block;
+
+    }
+
+    .h-nav {
+        height: 50px;
+    }
+
+    .v-class {
+        visibility: hidden;
+
+    }
+
+    #banner {
+        height: 500px;
+    }
+
+
+
+
+    #banner .text {
+        font-size: 1rem;
+        margin-left: 35px;
+    }
+
+    #banner #text2 {
+        font-size: 1.5rem;
+    }
+
+    #banner #text3 {
+        font-size: x-small;
+    }
+
+    #banner .icons {
+        margin-left: 35px;
+
+    }
+
+    #s1 {
+        flex-direction: row;
+        height: auto;
+    }
+
+    #s1 .s1-div {
+        margin: 10px;
+        width: 800%;
+    }
+
+    #s1 #s1-heading {
+        font-size: medium;
+    }
+
+    #s1 #s1-secondbox img {
+        width: 60%;
+    }
+
+    #s2 .box {
+        width: 40%;
+        margin: 20px 10px;
+    }
+
+    #s2 #s1-heading {
+        font-size: medium;
+    }
+
+    #s3 .s3-box {
+        width: 45%;
+        margin: 20px 10px;
+
+    }
+
+    #s3 h2 {
+        font-size: medium;
+    }
+
+    #contact-section .contact-h1 {
+        font-size: medium;
+    }
+
+    #contact-section #contact-box form {
+        width: 75%;
+    }
+
+
+    @media only screen and (max-width:655px) {
+
+        #s2 .box {
+            width: 80%;
+        }
+
+        #s3 .s3-box {
+            width: 70%;
+        }
+
+
+
+        #s4 {
+            flex-direction: row;
+            background-color: black;
+            height: auto;
+
+        }
+
+        #s4 .s4box {
+            width: 70%;
+            flex-wrap: nowrap;
+            padding-top: 20px;
+            height: auto;
+
+        }
+
+        #s4 #box7 {
+            padding-left: 5px;
+        }
+
+        footer {
+            font-size: x-small;
+        }
+    }
